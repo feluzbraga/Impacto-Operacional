@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Impacto Operacional – Fortalecemos Equipes. Impulsionamos Resultados.</title>
-  <meta name="description" content="Terceirização, supervisão, treinamento, monitoramento e cobertura de equipes. Mais de 23 anos de experiência em gestão e operações." />
+  <meta name="description" content="Supervisão de equipes, terceirização de profissionais, treinamentos, monitoramento operacional e cobertura de equipes para condomínios, empresas e indústrias. Mais de 23 anos de experiência." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700;900&family=Barlow+Condensed:wght@400;600;700;900&display=swap" rel="stylesheet" />
@@ -45,7 +45,7 @@
     .nav-logo {
       display: flex; align-items: center; gap: 12px; text-decoration: none;
     }
-    .nav-logo svg { width: 38px; height: 38px; }
+    .nav-logo img {  height: 60px;  width: auto;  display: block;}
     .nav-logo-text { display: flex; flex-direction: column; line-height: 1; }
     .nav-logo-text span:first-child {
       font-family: 'Bebas Neue', sans-serif;
@@ -500,19 +500,8 @@
 <!-- NAV -->
 <nav>
   <a class="nav-logo" href="#home">
-    <!-- Shield SVG icon aproximado -->
-    <svg viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M19 2L4 8v12c0 8 6.5 14.5 15 16 8.5-1.5 15-8 15-16V8L19 2z" fill="#1a5c30" stroke="#4caf50" stroke-width="1.5"/>
-      <circle cx="19" cy="18" r="6" stroke="#4caf50" stroke-width="1.5" fill="none"/>
-      <circle cx="19" cy="18" r="2.5" stroke="#4caf50" stroke-width="1.2" fill="none"/>
-      <line x1="23" y1="14" x2="28" y2="10" stroke="#4caf50" stroke-width="1.5" stroke-linecap="round"/>
-      <rect x="26" y="8" width="4" height="4" rx="1" fill="#4caf50" opacity=".7"/>
-    </svg>
-    <div class="nav-logo-text">
-      <span>Impacto</span>
-      <span>Operacional</span>
-    </div>
-  </a>
+    <img src="logo.png" alt="Impacto Operacional">
+</a>
   <ul class="nav-links">
     <li><a href="#home">Início</a></li>
     <li><a href="#servicos">Serviços</a></li>
@@ -625,6 +614,22 @@
 <section id="beneficios">
   <!-- Dor strip -->
   <div class="dor-strip" style="margin:-96px -6vw 64px;padding:36px 6vw;">
+<div style="text-align:center;margin-bottom:30px;">
+  <h3 style="
+    font-family:'Bebas Neue',sans-serif;
+    color:white;
+    font-size:42px;
+    letter-spacing:1px;
+    margin-bottom:10px;">
+    Sua operação enfrenta algum destes desafios?
+  </h3>
+
+  <p style="
+    color:rgba(255,255,255,.65);
+    font-size:16px;">
+    Problemas comuns que impactam produtividade, controle e resultados.
+  </p>
+</div>
     <div class="dor-inner">
       <div class="dor-item">
         <div class="dor-item-title">Falhas Operacionais</div>
@@ -691,17 +696,14 @@
   <div class="sobre-inner">
     <div class="sobre-photo-wrap fade-up">
       <div class="sobre-photo-box">
-        <div class="sobre-photo-placeholder">
-          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="40" cy="28" r="16" stroke="white" stroke-width="2" fill="none"/>
-            <path d="M8 72c0-17.7 14.3-32 32-32s32 14.3 32 32" stroke="white" stroke-width="2" fill="none"/>
-          </svg>
-          <p>Foto do Itamar</p>
-        </div>
-        <div class="sobre-photo-note">
-          <div class="sobre-photo-name">Itamar Rodrigues da Silva</div>
-          <div class="sobre-photo-role">Fundador · Impacto Operacional</div>
-        </div>
+        <img src="Itamar.png"
+     alt="Itamar Rodrigues da Silva"
+     style="width:100%;height:100%;object-fit:cover;">
+     
+<div class="sobre-photo-note">
+  <div class="sobre-photo-name">Itamar Rodrigues da Silva</div>
+  <div class="sobre-photo-role">Fundador · Impacto Operacional</div>
+</div>
       </div>
       <div class="sobre-accent-box">
         <div class="sobre-accent-num">23+</div>
@@ -753,11 +755,18 @@
             <div class="contato-item-value">(17) 99126-4175</div>
           </div>
         </a>
-        <a class="contato-item" href="mailto:contato@impactooperacional.com.br" style="text-decoration:none">
+	<a class="contato-item" href="https://instagram.com/impactooperacional" target="_blank" style="text-decoration:none">
+  	<div class="contato-item-icon">📷</div>
+	  <div>
+            <div class="contato-item-label">Instagram</div>
+             <div class="contato-item-value">@impactooperacional</div>
+	  </div>
+        </a>
+        <a class="contato-item" href="mailto:impacto.oper@gmail.com" style="text-decoration:none">
           <div class="contato-item-icon">✉️</div>
           <div>
             <div class="contato-item-label">E-mail</div>
-            <div class="contato-item-value">contato@impactooperacional.com.br</div>
+            <div class="contato-item-value">impacto.oper@gmail.com</div>
           </div>
         </a>
       </div>
@@ -790,8 +799,8 @@
             <option value="">Selecione...</option>
             <option>Condomínio</option>
             <option>Empresa / Comércio</option>
-            <option>Segurança Privada</option>
-            <option>Outro</option>
+            <option>Indústria</option>
+            <option>Outros</option>
           </select>
         </div>
         <div class="form-group">
