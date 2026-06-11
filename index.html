@@ -89,7 +89,7 @@
 
     /* SERVIÇOS */
     #servicos { background: var(--cinza-claro); }
-    .srv-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 1200px; margin: 0 auto; }
+    .srv-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1200px; margin: 0 auto; }
     .srv-card { background: var(--branco); border-radius: 10px; padding: 36px 30px; border: 1px solid var(--cinza-medio); transition: transform .25s, box-shadow .25s, border-color .25s; position: relative; overflow: hidden; }
     .srv-card::before { content: attr(data-n); position: absolute; top: -10px; right: 20px; font-family: 'Bebas Neue', sans-serif; font-size: 90px; color: var(--verde-medio); opacity: .06; line-height: 1; }
     .srv-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,.1); border-color: var(--verde-acento); }
@@ -195,6 +195,7 @@
 
     /* RESPONSIVE */
     @media (max-width: 900px) {
+      .srv-grid { grid-template-columns: repeat(2, 1fr); }
       .nav-links, .nav-cta { display: none; }
       .hamburger { display: flex; }
       nav { padding: 0 5vw; }
@@ -213,6 +214,7 @@
     @media (max-width: 600px) {
       section { padding: 64px 5vw; }
       .ben-grid, .srv-grid, .seg-grid { grid-template-columns: 1fr; }
+      .srv-grid { grid-template-columns: 1fr; }
       .dor-grid { grid-template-columns: 1fr; }
     }
   </style>
@@ -287,11 +289,11 @@
       <h2 class="sec-title">Soluções <span class="ac">Completas</span><br>Para Sua Operação</h2>
     </div>
     <div class="srv-grid">
-      <div class="srv-card fu" data-n="01"><div class="srv-ico">👥</div><div class="srv-n">01</div><h3 class="srv-name">Supervisão de Equipes</h3><p class="srv-desc">Acompanhamento presencial e remoto de equipes próprias, garantindo cumprimento de procedimentos e padrões operacionais com consistência.</p></div>
-      <div class="srv-card fu" data-n="02"><div class="srv-ico">🎓</div><div class="srv-n">02</div><h3 class="srv-name">Treinamentos e Capacitações</h3><p class="srv-desc">Desenvolvimento e atualização contínua das equipes para mais eficiência e qualidade na execução das atividades operacionais.</p></div>
-      <div class="srv-card fu" data-n="03"><div class="srv-ico">📊</div><div class="srv-n">03</div><h3 class="srv-name">Monitoramento Operacional</h3><p class="srv-desc">Acompanhamento constante da operação para identificação de desvios e suporte à tomada de decisão com dados em tempo real.</p></div>
-      <div class="srv-card fu" data-n="04"><div class="srv-ico">📅</div><div class="srv-n">04</div><h3 class="srv-name">Cobertura de Férias e Afastamentos</h3><p class="srv-desc">Substituição rápida e confiável para manter a continuidade da operação sem impactos na rotina e nos resultados do negócio.</p></div>
-      <div class="srv-card fu" data-n="05"><div class="srv-ico">🤝</div><div class="srv-n">05</div><h3 class="srv-name">Terceirização de Profissionais</h3><p class="srv-desc">Disponibilização de profissionais qualificados, alinhados às necessidades da sua operação, com toda a gestão a nosso cargo.</p></div>
+      <div class="srv-card fu" data-n="01"><div class="srv-ico">👥</div><div class="srv-n">01</div><h3 class="srv-name">Supervisão de Equipes</h3><p class="srv-desc">Acompanhamento presencial e remoto de equipes de portaria, vigilância, limpeza e demais funções operacionais, garantindo cumprimento de procedimentos e padrões com consistência.</p></div>
+      <div class="srv-card fu" data-n="02"><div class="srv-ico">🎓</div><div class="srv-n">02</div><h3 class="srv-name">Treinamentos e Capacitações</h3><p class="srv-desc">Desenvolvimento e atualização contínua de equipes de portaria, vigilância, limpeza e operações em geral, para mais eficiência e qualidade na execução.</p></div>
+      <div class="srv-card fu" data-n="03"><div class="srv-ico">📊</div><div class="srv-n">03</div><h3 class="srv-name">Monitoramento</h3><p class="srv-desc">Monitoramento 24 horas por câmeras e acompanhamento contínuo da operação, ampliando o controle operacional e contribuindo para a segurança do ambiente.</p></div>
+      <div class="srv-card fu" data-n="04"><div class="srv-ico">📅</div><div class="srv-n">04</div><h3 class="srv-name">Cobertura de Férias e Afastamentos</h3><p class="srv-desc">Substituição rápida e confiável em portaria, vigilância, limpeza e demais funções para manter a continuidade da operação sem impactos na rotina.</p></div>
+      <div class="srv-card fu" data-n="05"><div class="srv-ico">🤝</div><div class="srv-n">05</div><h3 class="srv-name">Terceirização de Profissionais</h3><p class="srv-desc">Disponibilização de profissionais qualificados para portaria, vigilância, limpeza e demais funções operacionais — alinhados às necessidades da sua operação, com toda a gestão a nosso cargo.</p></div>
       <div class="srv-card fu" data-n="06" style="background:linear-gradient(135deg,var(--verde-escuro),var(--verde-medio));border-color:transparent"><div class="srv-ico" style="background:rgba(255,255,255,.12)">🏢</div><div class="srv-n" style="color:var(--verde-claro)">Especialidade</div><h3 class="srv-name" style="color:var(--branco)">Operações Condominiais</h3><p class="srv-desc" style="color:rgba(255,255,255,.75)">Gestão especializada de operações em condomínios: portaria, segurança, manutenção e supervisão das equipes internas.</p></div>
     </div>
   </div>
