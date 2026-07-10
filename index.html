@@ -165,23 +165,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     /* CONTATO */
     #contato { background: var(--cinza-claro); }
-    .contato-inner { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
-    .contato-desc { font-size: 15.5px; line-height: 1.75; color: #4a5e50; margin: 18px 0 32px; }
-    .contato-items { display: flex; flex-direction: column; gap: 14px; }
+    .contato-inner { max-width: 640px; margin: 0 auto; text-align: center; }
+    .contato-desc { font-size: 15.5px; line-height: 1.75; color: #4a5e50; margin: 18px 0 36px; }
+    .contato-items { display: flex; flex-direction: column; gap: 14px; text-align: left; }
     .c-item { display: flex; align-items: center; gap: 14px; text-decoration: none; background: var(--branco); border: 1px solid var(--cinza-medio); border-radius: 10px; padding: 16px 18px; transition: border-color .2s, transform .2s; }
     .c-item:hover { border-color: var(--verde-acento); transform: translateX(4px); }
     .c-icon { width: 42px; height: 42px; min-width: 42px; border-radius: 8px; background: var(--verde-acento); display: flex; align-items: center; justify-content: center; font-size: 18px; }
     .c-label { font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #7a8e80; }
     .c-val { font-size: 15px; font-weight: 600; color: var(--texto-escuro); }
-    .contato-form { background: var(--branco); border-radius: 12px; padding: 36px; border: 1px solid var(--cinza-medio); }
-    .form-title { font-family: 'Bebas Neue', sans-serif; font-size: 24px; letter-spacing: 1px; margin-bottom: 20px; color: var(--texto-escuro); }
-    .fg { margin-bottom: 16px; }
-    .fl { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--texto-medio); margin-bottom: 6px; }
-    .fi, .fs, .ft { width: 100%; padding: 12px 14px; border: 1px solid var(--cinza-medio); border-radius: 6px; font-family: 'Barlow', sans-serif; font-size: 14.5px; color: var(--texto-escuro); background: var(--cinza-claro); transition: border-color .2s; }
-    .fi:focus, .fs:focus, .ft:focus { outline: none; border-color: var(--verde-acento); }
-    .ft { resize: vertical; min-height: 90px; }
-    .f-submit { width: 100%; background: var(--verde-acento); color: var(--branco); border: none; padding: 14px; border-radius: 6px; font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; transition: background .2s; }
-    .f-submit:hover { background: var(--verde-claro); }
+    .wa-cta-box { background: var(--verde-acento); border-radius: 14px; padding: 44px 36px; margin-bottom: 32px; }
+    .wa-cta-box .c-val { color: var(--branco); font-family: 'Bebas Neue', sans-serif; font-size: 34px; letter-spacing: 1px; }
+    .wa-cta-box .c-label { color: rgba(255,255,255,.75); }
+    .wa-cta-btn { display: inline-flex; align-items: center; gap: 10px; background: var(--branco); color: var(--verde-medio); padding: 16px 36px; border-radius: 4px; font-family: 'Barlow Condensed', sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; margin-top: 18px; transition: transform .15s, box-shadow .2s; box-shadow: 0 8px 24px rgba(0,0,0,.15); }
+    .wa-cta-btn:hover { transform: translateY(-2px); }
 
     /* FOOTER */
     footer { background: var(--texto-escuro); padding: 40px 6vw; }
@@ -372,38 +368,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <section id="contato">
   <div class="contato-inner">
     <div class="fu">
-      <p class="sec-label">Fale conosco</p>
+      <p class="sec-label" style="justify-content:center">Fale conosco</p>
       <h2 class="sec-title">Solicite seu <span class="ac">Orçamento</span></h2>
-      <p class="contato-desc">Terminou a obra ou precisa de uma limpeza especializada? Fale com a Impacto Operacional e receba um orçamento rápido, sem compromisso.</p>
+      <p class="contato-desc">Terminou a obra ou precisa de uma limpeza especializada? Fale agora mesmo com a Impacto Operacional pelo WhatsApp e receba um orçamento rápido, sem compromisso.</p>
+      <div class="wa-cta-box">
+        <div class="c-label">Atendimento rápido</div>
+        <div class="c-val">(17) 99613-3331</div>
+        <a class="wa-cta-btn" href="https://wa.me/5517996133331?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20de%20limpeza%20p%C3%B3s-obra." target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zm-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884zm8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chamar no WhatsApp
+        </a>
+      </div>
       <div class="contato-items">
-        <a class="c-item" href="https://wa.me/5517996133331?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20de%20limpeza%20p%C3%B3s-obra." target="_blank" rel="noopener"><div class="c-icon">📱</div><div><div class="c-label">WhatsApp</div><div class="c-val">(17) 99613-3331</div></div></a>
         <a class="c-item" href="mailto:impacto.oper@gmail.com"><div class="c-icon">✉️</div><div><div class="c-label">E-mail</div><div class="c-val">impacto.oper@gmail.com</div></div></a>
         <a class="c-item" href="https://www.instagram.com/impactooperacional" target="_blank" rel="noopener"><div class="c-icon" style="background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045)"><svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div><div><div class="c-label">Instagram</div><div class="c-val">@impactooperacional</div></div></a>
       </div>
-      <div style="margin-top:32px;padding:24px;background:linear-gradient(135deg,var(--verde-escuro),var(--verde-medio));border-radius:10px;color:white">
-        <p style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--verde-claro);margin-bottom:8px">Nossa promessa</p>
-        <p style="font-family:'Bebas Neue',sans-serif;font-size:22px;line-height:1.2;letter-spacing:1px">Sua obra termina.<br><span style="color:var(--verde-acento)">Nossa missão começa.</span></p>
-      </div>
-    </div>
-    <div class="contato-form fu">
-      <div class="form-title">Solicitar Orçamento</div>
-      <form onsubmit="handleSubmit(event)">
-        <div class="fg"><label class="fl" for="fn">Nome completo</label><input class="fi" id="fn" type="text" placeholder="Seu nome" required /></div>
-        <div class="fg"><label class="fl" for="ft">WhatsApp / Telefone</label><input class="fi" id="ft" type="tel" placeholder="(00) 00000-0000" required /></div>
-        <div class="fg"><label class="fl" for="fe">E-mail</label><input class="fi" id="fe" type="email" placeholder="seu@email.com" /></div>
-        <div class="fg">
-          <label class="fl" for="ftp">Tipo de imóvel</label>
-          <select class="fs" id="ftp">
-            <option value="">Selecione...</option>
-            <option value="Residência">Residência</option>
-            <option value="Empresa/Comércio">Empresa / Comércio</option>
-            <option value="Condomínio">Condomínio</option>
-            <option value="Outros">Outros</option>
-          </select>
-        </div>
-        <div class="fg"><label class="fl" for="fm">Conte um pouco sobre o serviço</label><textarea class="ft" id="fm" placeholder="Tamanho do imóvel, tipo de obra, prazo desejado..."></textarea></div>
-        <button class="f-submit" type="submit">Enviar via WhatsApp →</button>
-      </form>
     </div>
   </div>
 </section>
@@ -452,17 +431,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     });
   }, { threshold: 0.1 });
   document.querySelectorAll('.fu').forEach(function(el) { obs.observe(el); });
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    var nome = document.getElementById('fn').value;
-    var tel  = document.getElementById('ft').value;
-    var tipo = document.getElementById('ftp').value;
-    var msg  = document.getElementById('fm').value;
-    if (!nome || !tel) { alert('Por favor, preencha seu nome e telefone.'); return; }
-    var text = encodeURIComponent('Olá! Meu nome é ' + nome + '.\nTelefone: ' + tel + '\nTipo de imóvel: ' + (tipo || 'Não informado') + '\n\n' + msg);
-    window.open('https://wa.me/5517996133331?text=' + text, '_blank');
-  }
 </script>
 </body>
 </html>
