@@ -333,6 +333,131 @@
       color: #8a7348;
     }
 
+
+    /* PARCERIA EM DESTAQUE */
+    #parceria {
+      background: linear-gradient(135deg, #eef6ef 0%, #ffffff 55%, #edf5ef 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    #parceria::before {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: rgba(76,175,80,.06);
+      right: -180px;
+      top: -180px;
+    }
+    .parceria-feature {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 70px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .parceria-lead {
+      margin-top: 20px;
+      font-size: 20px;
+      line-height: 1.65;
+      font-weight: 500;
+      color: var(--verde-escuro);
+      max-width: 700px;
+    }
+    .parceria-copy {
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 1.75;
+      color: #53635a;
+      max-width: 650px;
+    }
+    .parceria-points {
+      margin-top: 27px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 13px 18px;
+    }
+    .parceria-points div {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--verde-escuro);
+      font-size: 14px;
+    }
+    .parceria-points span {
+      display: inline-flex;
+      width: 22px;
+      height: 22px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--verde-acento);
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .asa-highlight { position: relative; }
+    .asa-brand-box {
+      background: #0d3d1f;
+      border-radius: 16px;
+      padding: 42px 35px;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(10,53,33,.18);
+      border: 1px solid rgba(109,191,110,.35);
+    }
+    .asa-small {
+      color: rgba(255,255,255,.58);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .asa-brand-box img {
+      max-width: 220px;
+      max-height: 150px;
+      width: auto;
+      height: auto;
+      margin: 0 auto 22px;
+      object-fit: contain;
+    }
+    .asa-since {
+      color: var(--verde-claro);
+      font-size: 13px;
+      line-height: 1.55;
+      max-width: 240px;
+      margin: 0 auto;
+    }
+    .asa-badge {
+      position: absolute;
+      left: -28px;
+      bottom: -24px;
+      background: white;
+      color: var(--verde-escuro);
+      border-left: 4px solid var(--verde-acento);
+      border-radius: 7px;
+      padding: 14px 20px;
+      box-shadow: 0 12px 30px rgba(10,53,33,.13);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 1px;
+      line-height: 1.1;
+      text-transform: uppercase;
+    }
+    .asa-badge span {
+      display: block;
+      margin-top: 5px;
+      font-size: 10px;
+      color: #607267;
+      letter-spacing: .8px;
+    }
+
     /* CONTATO */
     #contato { background: var(--cinza-claro); }
     .contato-inner { max-width: 640px; margin: 0 auto; text-align: center; }
@@ -378,7 +503,8 @@
       .hero-content { max-width: 780px; }
       .dif-grid { grid-template-columns: repeat(2, 1fr); }
       .srv-grid { grid-template-columns: 1fr; }
-      .diferencial-inner, .parceria-box { grid-template-columns: 1fr; }
+      .diferencial-inner, .parceria-feature { grid-template-columns: 1fr; }
+      .asa-highlight { max-width: 500px; margin: 10px auto 0; width: 100%; }
       .at-grid { grid-template-columns: repeat(2, 1fr); }
       .nav-links { display: none; }
       .hamburger { display: flex; }
@@ -391,7 +517,10 @@
       .dif-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
       .dif-card { padding: 22px 15px; }
       .at-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
-      .parceria-box { padding: 28px 20px; }
+      .parceria-feature { gap: 40px; }
+      .parceria-points { grid-template-columns: 1fr; }
+      .asa-brand-box { padding: 35px 25px; }
+      .asa-badge { left: 15px; bottom: -22px; }
       .monitor-card { grid-template-columns: 1fr 1fr; }
       .foot-inner { flex-direction: column; align-items: flex-start; }
     }
@@ -408,9 +537,9 @@
     <span class="nav-logo-txt">IMPACTO<span>Operacional</span></span>
   </a>
   <ul class="nav-links">
+    <li><a href="#parceria">A parceria</a></li>
     <li><a href="#porque">Por que importa</a></li>
-    <li><a href="#servicos">Serviço</a></li>
-    <li><a href="#diferencial">Diferencial</a></li>
+    <li><a href="#servicos">Como funciona</a></li>
     <li><a href="#atendemos">Atendemos</a></li>
     <li><a href="#contato">Contato</a></li>
   </ul>
@@ -419,9 +548,9 @@
 </nav>
 
 <div class="mob-menu" id="mobMenu">
+  <a href="#parceria" onclick="closeMob()">A parceria</a>
   <a href="#porque" onclick="closeMob()">Por que importa</a>
-  <a href="#servicos" onclick="closeMob()">Serviço</a>
-  <a href="#diferencial" onclick="closeMob()">Diferencial</a>
+  <a href="#servicos" onclick="closeMob()">Como funciona</a>
   <a href="#atendemos" onclick="closeMob()">Atendemos</a>
   <a href="#contato" onclick="closeMob()">Contato</a>
 </div>
@@ -456,6 +585,34 @@
       <div class="hero-float-badge">
         <div class="hero-float-badge-t">Ter câmeras é uma coisa.<br>Ter alguém monitorando é outra.</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARCERIA -->
+<section id="parceria">
+  <div class="parceria-feature">
+    <div class="parceria-content fu">
+      <p class="sec-label">Uma parceria que fortalece o serviço</p>
+      <h2 class="sec-title">Experiência e credibilidade <span class="ac">unidas para monitorar o que importa.</span></h2>
+      <p class="parceria-lead">A Impacto Operacional une sua experiência em gestão e operações à credibilidade técnica da ASA Monitoramento para oferecer uma solução completa de monitoramento 24 horas na região.</p>
+      <p class="parceria-copy">Mais do que instalar câmeras, nosso objetivo é entregar um serviço estruturado, com acompanhamento contínuo, tecnologia e profissionais que conhecem o setor.</p>
+
+      <div class="parceria-points">
+        <div><span>✓</span><strong>Experiência operacional</strong></div>
+        <div><span>✓</span><strong>Especialização técnica</strong></div>
+        <div><span>✓</span><strong>Monitoramento 24 horas</strong></div>
+        <div><span>✓</span><strong>Atendimento regional</strong></div>
+      </div>
+    </div>
+
+    <div class="asa-highlight fu">
+      <div class="asa-brand-box">
+        <div class="asa-small">Em parceria com</div>
+        <img src="img/logo-asa.png" alt="ASA Monitoramento" />
+        <div class="asa-since">Especialistas desde 2013 em sistemas de alarme e monitoramento</div>
+      </div>
+      <div class="asa-badge">Impacto + ASA<br><span>Experiência que trabalha junta</span></div>
     </div>
   </div>
 </section>
@@ -547,7 +704,7 @@
     <div class="fu">
       <p class="sec-label">O diferencial</p>
       <h2 class="sec-title">Ter alguém <span class="ac">monitorando</span> faz a diferença.</h2>
-      <p class="diferencial-copy">A Impacto Operacional oferece o serviço em parceria com uma empresa especializada em sistemas de alarme e monitoramento, unindo a gestão da Impacto à experiência técnica da ASA.</p>
+      <p class="diferencial-copy">A combinação entre uma operação estruturada e uma central especializada permite oferecer acompanhamento contínuo para quem busca mais controle sobre seu patrimônio.</p>
     </div>
 
     <div class="monitor-card fu">
@@ -590,22 +747,6 @@
   </div>
 </section>
 
-<!-- PARCERIA -->
-<section id="parceria">
-  <div class="parceria-box fu">
-    <div>
-      <p class="sec-label">Parceria que gera segurança</p>
-      <h2 class="parceria-title">Experiência técnica para monitorar o que importa.</h2>
-      <p class="parceria-copy">O serviço é realizado pela Impacto Operacional em parceria com a <b>ASA</b>, especializada desde 2013 em sistemas de alarme e monitoramento.</p>
-    </div>
-
-    <div class="asa-area">
-      <img src="img/logo-asa.png" alt="ASA - Sistemas de Alarme e Monitoramento" onerror="this.style.display='none';" />
-      <div class="asa-label">Especializados desde 2013</div>
-    </div>
-  </div>
-</section>
-
 <!-- CONTATO -->
 <section id="contato">
   <div class="contato-inner">
@@ -635,9 +776,9 @@
       <div class="foot-slogan">Monitoramento 24h e soluções operacionais</div>
     </div>
     <div class="foot-links">
+      <a href="#parceria">A parceria</a>
       <a href="#porque">Por que importa</a>
-      <a href="#servicos">Serviço</a>
-      <a href="#diferencial">Diferencial</a>
+      <a href="#servicos">Como funciona</a>
       <a href="#atendemos">Atendemos</a>
       <a href="#contato">Contato</a>
       <a href="https://www.impactooperacional.com.br">Site principal</a>
