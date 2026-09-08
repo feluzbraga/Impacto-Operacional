@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<!--
+  ASSETS: coloque estes arquivos na pasta /img/ do GitHub:
+  - logo-impacto.png
+  - central-monitoramento.png
+-->
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+i:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-M6BTX5ZF');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18242343184"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18242343184');
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C03LV543FB"></script>
+  <script>
+    gtag('config', 'G-C03LV543FB');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monitoramento 24h por Câmeras | Impacto Operacional</title>
+  <meta name="description" content="Central de monitoramento 24h por câmeras para residências, condomínios, empresas e comércios em São José do Rio Preto e região. Serviço de monitoramento 24h da Impacto Operacional." />
+  <meta name="keywords" content="monitoramento 24h, central de monitoramento, monitoramento por câmeras, monitoramento residencial, monitoramento de condomínio, monitoramento empresarial, São José do Rio Preto" />
+  <meta name="author" content="Impacto Operacional" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Monitoramento 24h | Impacto Operacional" />
+  <meta property="og:description" content="Onde você estiver, a gente está junto. Monitoramento por câmeras 24h para residências, condomínios, empresas e comércios." />
+  <meta property="og:image" content="https://www.impactooperacional.com.br/monitoramento/img/central-monitoramento.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700;900&family=Barlow+Condensed:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --verde-escuro: #0d3d1f;
+      --verde-medio: #1a5c30;
+      --verde-acento: #4caf50;
+      --verde-claro: #6dbf6e;
+      --branco: #ffffff;
+      --cinza-claro: #f5f5f3;
+      --cinza-medio: #e8e8e4;
+      --texto-escuro: #0a1a0f;
+      --texto-medio: #3a5a40;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Barlow', sans-serif; background: var(--branco); color: var(--texto-escuro); overflow-x: hidden; }
+    img { max-width: 100%; display: block; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 6vw; height: 72px;
+      background: rgba(13,61,31,.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(77,175,80,.15);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-logo img { height: 42px; width: auto; object-fit: contain; }
+    .nav-logo-txt {
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+      letter-spacing: 1px; color: var(--branco); font-size: 17px; line-height: 1.1;
+    }
+    .nav-logo-txt span {
+      display: block; font-size: 10px; font-weight: 600;
+      letter-spacing: 2px; color: var(--verde-claro); text-transform: uppercase;
+    }
+    .nav-links { display: flex; gap: 27px; list-style: none; }
+    .nav-links a {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 13px;
+      font-weight: 600; letter-spacing: 1.7px; text-transform: uppercase;
+      color: rgba(255,255,255,.75); text-decoration: none;
+    }
+    .nav-links a:hover { color: var(--verde-claro); }
+    .nav-cta, .btn-p, .wa-cta-btn {
+      background: var(--verde-acento); color: var(--branco);
+      text-decoration: none; font-weight: 700; transition: .2s ease;
+    }
+    .nav-cta {
+      padding: 10px 22px; border-radius: 4px;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 13px;
+      letter-spacing: 1.7px; text-transform: uppercase;
+    }
+    .nav-cta:hover, .btn-p:hover { background: var(--verde-claro); transform: translateY(-1px); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
+    .hamburger span { width: 26px; height: 2px; background: white; }
+
+    .mob-menu {
+      position: fixed; top: 72px; left: 0; right: 0;
+      background: var(--verde-escuro); flex-direction: column;
+      padding: 10px 6vw 24px; gap: 4px; display: none; z-index: 99;
+    }
+    .mob-menu.open { display: flex; }
+    .mob-menu a {
+      color: rgba(255,255,255,.85); text-decoration: none;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 15px;
+      font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
+      padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+
+    /* HERO */
+    #home {
+      min-height: 100vh;
+      background: linear-gradient(160deg, var(--verde-escuro) 0%, #0a2a12 55%, #061509 100%);
+      display: flex; align-items: center; padding: 110px 6vw 60px;
+      position: relative; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0; opacity: .24;
+      background:
+        linear-gradient(90deg, rgba(5,24,12,.95) 0%, rgba(5,24,12,.78) 42%, rgba(5,24,12,.22) 100%),
+        url('img/central-monitoramento.png') center/cover no-repeat;
+    }
+    .hero-grid {
+      position: absolute; inset: 0; opacity: .07;
+      background-image: linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+      background-size: 55px 55px;
+    }
+    .hero-inner {
+      width: 100%; max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: 1.05fr .95fr;
+      gap: 60px; align-items: center; position: relative; z-index: 2;
+    }
+    .hero-tagline, .sec-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px; font-weight: 700; letter-spacing: 2.5px;
+      text-transform: uppercase; color: var(--verde-claro);
+    }
+    .hero-tagline { margin-bottom: 15px; }
+    .hero-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(54px, 6vw, 78px); line-height: .98;
+      letter-spacing: 1.5px; color: var(--branco); margin-bottom: 24px;
+    }
+    .ac { color: var(--verde-claro); }
+    .hero-desc {
+      max-width: 620px; color: rgba(255,255,255,.78);
+      font-size: 17px; line-height: 1.75; margin-bottom: 25px;
+    }
+    .hero-badges { display: flex; gap: 9px; flex-wrap: wrap; margin-bottom: 28px; }
+    .hero-badge {
+      border: 1px solid rgba(109,191,110,.35);
+      background: rgba(255,255,255,.05);
+      color: rgba(255,255,255,.82);
+      padding: 7px 12px; border-radius: 3px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px; font-weight: 700; letter-spacing: 1.3px; text-transform: uppercase;
+    }
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-p { display: inline-flex; align-items: center; justify-content: center; padding: 14px 25px; border-radius: 4px; }
+    .btn-o {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 14px 25px; border: 1px solid rgba(255,255,255,.3);
+      color: white; text-decoration: none; border-radius: 4px;
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+      letter-spacing: 1.5px; text-transform: uppercase;
+    }
+    .hero-photo-wrap { position: relative; }
+    .hero-photo-box {
+      border-radius: 14px; overflow: hidden;
+      border: 1px solid rgba(109,191,110,.25);
+      box-shadow: 0 25px 70px rgba(0,0,0,.38);
+      background: #102d1b;
+    }
+    .hero-photo-box img {
+      width: 100%; height: 440px; object-fit: cover;
+    }
+    .hero-float-badge {
+      position: absolute; left: -28px; bottom: -25px;
+      background: var(--branco); color: var(--texto-escuro);
+      padding: 18px 22px; border-radius: 8px;
+      box-shadow: 0 15px 35px rgba(0,0,0,.25);
+      border-left: 4px solid var(--verde-acento);
+    }
+    .hero-float-badge-t {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 16px; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; line-height: 1.2;
+    }
+
+    /* SECTIONS */
+    section:not(#home) { padding: 86px 6vw; }
+    .sec-head-center { max-width: 760px; margin: 0 auto; text-align: center; }
+    .sec-label { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 13px; }
+    .sec-label::before { content: ""; width: 28px; height: 2px; background: var(--verde-acento); }
+    .sec-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(38px, 4.5vw, 56px);
+      line-height: 1.03; letter-spacing: 1px; color: var(--texto-escuro);
+    }
+    .sec-intro { margin-top: 16px; color: #506258; font-size: 16px; line-height: 1.75; }
+
+    /* POR QUE IMPORTANTE */
+    #porque { background: var(--branco); }
+    .alert-box {
+      max-width: 1000px; margin: 45px auto 34px;
+      padding: 24px 28px; border-radius: 10px;
+      background: #edf6ef; border: 1px solid #d8eadb;
+      display: flex; align-items: center; gap: 18px;
+      color: #294a34; font-size: 15px; line-height: 1.6;
+    }
+    .alert-box .ico {
+      width: 46px; height: 46px; min-width: 46px; border-radius: 50%;
+      background: var(--verde-escuro); color: var(--verde-claro);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Bebas Neue', sans-serif; font-size: 25px;
+    }
+    .dif-grid {
+      max-width: 1050px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 17px;
+    }
+    .dif-card {
+      border: 1px solid var(--cinza-medio); border-radius: 10px;
+      padding: 28px 20px; background: #fff;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .dif-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(10,53,33,.09); }
+    .dif-ico { font-size: 28px; margin-bottom: 14px; }
+    .dif-name {
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+      font-size: 17px; letter-spacing: 1px; text-transform: uppercase;
+      color: var(--verde-escuro); margin-bottom: 8px;
+    }
+    .dif-desc { font-size: 13.5px; line-height: 1.65; color: #5c6c62; }
+
+    /* SERVIÇO */
+    #servicos { background: var(--cinza-claro); }
+    .srv-grid {
+      max-width: 1050px; margin: 50px auto 0;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+    }
+    .srv-card {
+      background: white; border: 1px solid var(--cinza-medio);
+      border-radius: 10px; padding: 34px 28px;
+    }
+    .srv-tag {
+      display: inline-block; padding: 5px 10px; border-radius: 3px;
+      background: var(--verde-escuro); color: var(--verde-claro);
+      font-family: 'Barlow Condensed', sans-serif; font-size: 10px;
+      font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+    .srv-name {
+      font-family: 'Bebas Neue', sans-serif; font-size: 28px;
+      color: var(--verde-escuro); letter-spacing: 1px; margin-bottom: 10px;
+    }
+    .srv-desc { font-size: 14px; line-height: 1.7; color: #53635a; margin-bottom: 18px; }
+    .srv-list { list-style: none; display: grid; gap: 10px; }
+    .srv-list li { font-size: 13px; color: #53635a; padding-left: 19px; position: relative; }
+    .srv-list li::before { content: "✓"; position: absolute; left: 0; color: var(--verde-acento); font-weight: 900; }
+
+    /* DIFERENCIAL */
+    #diferencial {
+      background: linear-gradient(160deg, var(--verde-escuro), #0a2a12);
+      color: white; position: relative; overflow: hidden;
+    }
+    .diferencial-inner {
+      max-width: 1050px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 55px; align-items: center;
+    }
+    #diferencial .sec-label { color: var(--verde-claro); }
+    #diferencial .sec-title { color: white; }
+    .diferencial-copy { color: rgba(255,255,255,.72); font-size: 16px; line-height: 1.8; margin-top: 18px; }
+    .monitor-card {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;
+    }
+    .monitor-item {
+      border: 1px solid rgba(109,191,110,.22);
+      background: rgba(255,255,255,.045);
+      border-radius: 9px; padding: 22px;
+    }
+    .monitor-item .mi-ico { font-size: 25px; margin-bottom: 10px; }
+    .monitor-item strong {
+      display: block; font-family: 'Barlow Condensed', sans-serif;
+      font-size: 16px; text-transform: uppercase; letter-spacing: 1px;
+      color: var(--verde-claro);
+    }
+    .monitor-item span { display: block; margin-top: 6px; font-size: 12.5px; color: rgba(255,255,255,.58); line-height: 1.5; }
+
+    /* ATENDEMOS */
+    #atendemos { background: linear-gradient(160deg, var(--verde-escuro), #0a2a12); color: var(--branco); }
+    .at-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1050px; margin: 50px auto 0; }
+    .at-card {
+      background: rgba(255,255,255,.045); border: 1px solid rgba(77,175,80,.2);
+      border-radius: 10px; padding: 32px 20px; text-align: center;
+    }
+    .at-ico { font-size: 34px; margin-bottom: 14px; }
+    .at-name {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 700;
+      letter-spacing: 1.5px; text-transform: uppercase; color: var(--verde-claro);
+    }
+
+    /* EXPERIÊNCIA IMPACTO */
+    #experiencia {
+      background: linear-gradient(135deg, #eef6ef 0%, #ffffff 55%, #edf5ef 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    #experiencia::before {
+      content: "";
+      position: absolute;
+      width: 440px;
+      height: 440px;
+      border-radius: 50%;
+      background: rgba(76,175,80,.06);
+      right: -180px;
+      top: -180px;
+    }
+    .experiencia-feature {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 70px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .experiencia-lead {
+      margin-top: 20px;
+      font-size: 20px;
+      line-height: 1.65;
+      font-weight: 500;
+      color: var(--verde-escuro);
+      max-width: 700px;
+    }
+    .experiencia-copy {
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 1.75;
+      color: #53635a;
+      max-width: 650px;
+    }
+    .experiencia-points {
+      margin-top: 27px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 13px 18px;
+    }
+    .experiencia-points div {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--verde-escuro);
+      font-size: 14px;
+    }
+    .experiencia-points span {
+      display: inline-flex;
+      width: 22px;
+      height: 22px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--verde-acento);
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .experiencia-card {
+      background: var(--verde-escuro);
+      border-radius: 16px;
+      padding: 42px 35px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 20px 50px rgba(10,53,33,.18);
+      border: 1px solid rgba(109,191,110,.35);
+    }
+    .experiencia-number {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 92px;
+      line-height: .8;
+      letter-spacing: 2px;
+      color: var(--verde-claro);
+    }
+    .experiencia-number span { font-size: 42px; margin-left: 3px; }
+    .experiencia-card-title {
+      margin-top: 25px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .experiencia-card p {
+      margin: 12px auto 0;
+      max-width: 290px;
+      font-size: 14px;
+      line-height: 1.65;
+      color: rgba(255,255,255,.68);
+    }
+    .experiencia-card-line {
+      width: 70px;
+      height: 3px;
+      margin: 24px auto 15px;
+      background: var(--verde-acento);
+    }
+    .experiencia-card-bottom {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: rgba(255,255,255,.48);
+    }
+
+    /* CONTATO */
+    #contato { background: var(--cinza-claro); }
+    .contato-inner { max-width: 640px; margin: 0 auto; text-align: center; }
+    .contato-desc { font-size: 15.5px; line-height: 1.75; color: #4a5e50; margin: 18px 0 32px; }
+    .wa-cta-box {
+      background: var(--verde-acento); border-radius: 14px;
+      padding: 40px 32px; margin-bottom: 25px;
+    }
+    .c-label {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 11px;
+      font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+      color: rgba(255,255,255,.75);
+    }
+    .wa-cta-box .c-val {
+      color: white; font-family: 'Bebas Neue', sans-serif;
+      font-size: 35px; letter-spacing: 1px; margin-top: 3px;
+    }
+    .wa-cta-btn {
+      display: inline-flex; align-items: center; gap: 9px;
+      background: white; color: var(--verde-medio);
+      padding: 15px 34px; border-radius: 4px;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 16px;
+      letter-spacing: 1.5px; text-transform: uppercase; margin-top: 16px;
+    }
+    .contato-note { font-size: 13px; color: #6c7b72; }
+
+    /* FOOTER */
+    footer { background: var(--texto-escuro); padding: 40px 6vw; }
+    .foot-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
+    .foot-brand { font-family: 'Bebas Neue', sans-serif; font-size: 22px; color: white; letter-spacing: 1px; }
+    .foot-slogan { font-size: 12px; color: rgba(255,255,255,.4); margin-top: 2px; }
+    .foot-links { display: flex; gap: 20px; flex-wrap: wrap; }
+    .foot-links a { color: rgba(255,255,255,.5); font-size: 12px; text-decoration: none; }
+    .foot-links a:hover { color: var(--verde-claro); }
+
+    /* FADE */
+    .fu { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .fu.vis { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 980px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-photo-wrap { order: -1; max-width: 680px; margin: 0 auto; width: 100%; }
+      .hero-content { max-width: 780px; }
+      .dif-grid { grid-template-columns: repeat(2, 1fr); }
+      .srv-grid { grid-template-columns: 1fr; }
+      .diferencial-inner, .parceria-feature { grid-template-columns: 1fr; }
+      .Impacto Operacional-highlight { max-width: 500px; margin: 10px auto 0; width: 100%; }
+      .at-grid { grid-template-columns: repeat(2, 1fr); }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+    }
+    @media (max-width: 600px) {
+      section:not(#home) { padding: 72px 6vw; }
+      .hero-title { font-size: 52px; }
+      .hero-photo-box img { height: 300px; }
+      .hero-float-badge { display: none; }
+      .dif-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .dif-card { padding: 22px 15px; }
+      .at-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .parceria-feature { gap: 40px; }
+      .parceria-points { grid-template-columns: 1fr; }
+      .Impacto Operacional-brand-box { padding: 35px 25px; }
+      .Impacto Operacional-badge { left: 15px; bottom: -22px; }
+      .monitor-card { grid-template-columns: 1fr 1fr; }
+      .foot-inner { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6BTX5ZF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="/">
+    <img src="img/logo-impacto.png" alt="Impacto Operacional" onerror="this.style.display='none';" />
+    <span class="nav-logo-txt">IMPACTO<span>Operacional</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#experiencia">Nossa experiência</a></li>
+    <li><a href="#porque">Por que importa</a></li>
+    <li><a href="#servicos">Como funciona</a></li>
+    <li><a href="#atendemos">Atendemos</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <a class="nav-cta" href="https://wa.me/5517996133331?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20monitoramento%2024h." target="_blank" rel="noopener">Fale conosco</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mob-menu" id="mobMenu">
+  <a href="#experiencia" onclick="closeMob()">Nossa experiência</a>
+  <a href="#porque" onclick="closeMob()">Por que importa</a>
+  <a href="#servicos" onclick="closeMob()">Como funciona</a>
+  <a href="#atendemos" onclick="closeMob()">Atendemos</a>
+  <a href="#contato" onclick="closeMob()">Contato</a>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div>
+      <p class="hero-tagline">Central de monitoramento 24 horas</p>
+      <h1 class="hero-title">Onde você estiver,<br><span class="ac">a gente está junto!</span></h1>
+      <p class="hero-desc">Monitoramento por câmeras em tempo real para acompanhar seu patrimônio todos os dias, mesmo quando você não está lá.</p>
+
+      <div class="hero-badges">
+        <span class="hero-badge">Residências</span>
+        <span class="hero-badge">Condomínios</span>
+        <span class="hero-badge">Empresas</span>
+        <span class="hero-badge">Comércios</span>
+      </div>
+
+      <div class="hero-btns">
+        <a class="btn-p" href="https://wa.me/5517996133331?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20monitoramento%2024h." target="_blank" rel="noopener">Falar com a Impacto →</a>
+        <a class="btn-o" href="#porque">Entenda o serviço</a>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap fu">
+      <div class="hero-photo-box">
+        <img src="img/central-monitoramento.png" alt="Central de monitoramento por câmeras" loading="eager" />
+      </div>
+      <div class="hero-float-badge">
+        <div class="hero-float-badge-t">Ter câmeras é uma coisa.<br>Ter alguém monitorando é outra.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIÊNCIA IMPACTO -->
+<section id="experiencia">
+  <div class="experiencia-feature">
+    <div class="experiencia-content fu">
+      <p class="sec-label">Experiência que faz diferença</p>
+      <h2 class="sec-title">A Impacto Operacional entende de <span class="ac">monitoramento.</span></h2>
+      <p class="experiencia-lead">Nossa experiência na área nos permite entender diferentes operações e desenvolver soluções de monitoramento 24 horas adequadas a cada necessidade.</p>
+      <p class="experiencia-copy">Mais do que disponibilizar câmeras, oferecemos acompanhamento contínuo, tecnologia e uma equipe preparada para observar o que acontece e seguir os procedimentos definidos para cada operação.</p>
+      <div class="experiencia-points">
+        <div><span>✓</span><strong>Experiência em operações</strong></div>
+        <div><span>✓</span><strong>Monitoramento contínuo</strong></div>
+        <div><span>✓</span><strong>Equipe especializada</strong></div>
+        <div><span>✓</span><strong>Atendimento regional</strong></div>
+      </div>
+    </div>
+    <div class="experiencia-card fu">
+      <div class="experiencia-number">24<span>h</span></div>
+      <div class="experiencia-card-title">Central de Monitoramento</div>
+      <p>Acompanhamento das imagens em tempo real para manter a atenção voltada ao seu patrimônio.</p>
+      <div class="experiencia-card-line"></div>
+      <div class="experiencia-card-bottom">IMPACTO OPERACIONAL</div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUE É IMPORTANTE -->
+<section id="porque">
+  <div class="sec-head-center fu">
+    <p class="sec-label">Por que o monitoramento 24h é importante</p>
+    <h2 class="sec-title">Porque <span class="ac">gravar</span> não é o mesmo que <span class="ac">monitorar</span>.</h2>
+    <p class="sec-intro">Uma câmera registra o que aconteceu. O monitoramento 24h coloca uma equipe acompanhando as imagens e preparada para seguir os procedimentos definidos para cada situação.</p>
+  </div>
+
+  <div class="alert-box fu">
+    <div class="ico">!</div>
+    <p>Quando você está longe, dormindo ou simplesmente não pode acompanhar tudo, <b>o monitoramento mantém a atenção voltada para o que acontece no local.</b></p>
+  </div>
+
+  <div class="dif-grid">
+    <div class="dif-card fu">
+      <div class="dif-ico">◉</div>
+      <div class="dif-name">Atenção contínua</div>
+      <div class="dif-desc">As imagens são acompanhadas por uma central de monitoramento durante todo o período contratado.</div>
+    </div>
+    <div class="dif-card fu">
+      <div class="dif-ico">◌</div>
+      <div class="dif-name">Tempo real</div>
+      <div class="dif-desc">O acompanhamento acontece enquanto os eventos estão acontecendo, e não apenas depois.</div>
+    </div>
+    <div class="dif-card fu">
+      <div class="dif-ico">✓</div>
+      <div class="dif-name">Mais controle</div>
+      <div class="dif-desc">Ajuda a acompanhar acessos, circulação e situações fora do padrão no local monitorado.</div>
+    </div>
+    <div class="dif-card fu">
+      <div class="dif-ico">◈</div>
+      <div class="dif-name">Presença à distância</div>
+      <div class="dif-desc">Mesmo longe, você conta com uma estrutura dedicada ao acompanhamento do seu patrimônio.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇO -->
+<section id="servicos">
+  <div class="sec-head-center fu">
+    <p class="sec-label">Como funciona</p>
+    <h2 class="sec-title">Monitoramento <span class="ac">24 horas</span></h2>
+    <p class="sec-intro">Uma solução pensada para transformar câmeras instaladas em acompanhamento contínuo.</p>
+  </div>
+
+  <div class="srv-grid">
+    <div class="srv-card fu">
+      <span class="srv-tag">01</span>
+      <h3 class="srv-name">Câmeras</h3>
+      <p class="srv-desc">As imagens dos pontos definidos para monitoramento são disponibilizadas para acompanhamento.</p>
+      <ul class="srv-list">
+        <li>Acompanhamento das imagens</li>
+        <li>Visibilidade dos pontos monitorados</li>
+        <li>Estrutura adequada ao local</li>
+      </ul>
+    </div>
+
+    <div class="srv-card fu">
+      <span class="srv-tag">02</span>
+      <h3 class="srv-name">Central 24h</h3>
+      <p class="srv-desc">Uma central dedicada ao acompanhamento das imagens durante todo o período contratado.</p>
+      <ul class="srv-list">
+        <li>Monitoramento contínuo</li>
+        <li>Acompanhamento em tempo real</li>
+        <li>Equipe especializada</li>
+      </ul>
+    </div>
+
+    <div class="srv-card fu">
+      <span class="srv-tag">03</span>
+      <h3 class="srv-name">Acompanhamento</h3>
+      <p class="srv-desc">Em situações que exigem atenção, são seguidos os procedimentos definidos para o serviço.</p>
+      <ul class="srv-list">
+        <li>Identificação de situações relevantes</li>
+        <li>Procedimentos previamente definidos</li>
+        <li>Mais controle para quem administra</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAL -->
+<section id="diferencial">
+  <div class="diferencial-inner">
+    <div class="fu">
+      <p class="sec-label">O diferencial</p>
+      <h2 class="sec-title">Ter alguém <span class="ac">monitorando</span> faz a diferença.</h2>
+      <p class="diferencial-copy">A experiência da Impacto Operacional na área permite estruturar o monitoramento de acordo com as características de cada local, com acompanhamento contínuo, tecnologia e procedimentos definidos.</p>
+    </div>
+
+    <div class="monitor-card fu">
+      <div class="monitor-item">
+        <div class="mi-ico">24h</div>
+        <strong>Monitoramento</strong>
+        <span>Acompanhamento durante todo o período contratado.</span>
+      </div>
+      <div class="monitor-item">
+        <div class="mi-ico">◉</div>
+        <strong>Tempo real</strong>
+        <span>Imagens acompanhadas enquanto os eventos acontecem.</span>
+      </div>
+      <div class="monitor-item">
+        <div class="mi-ico">◈</div>
+        <strong>Estrutura</strong>
+        <span>Central dedicada ao serviço de monitoramento.</span>
+      </div>
+      <div class="monitor-item">
+        <div class="mi-ico">✓</div>
+        <strong>Procedimentos</strong>
+        <span>Atuação conforme os procedimentos definidos para cada operação.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ATENDEMOS -->
+<section id="atendemos">
+  <div class="sec-head-center fu">
+    <p class="sec-label" style="justify-content:center">Onde atuamos</p>
+    <h2 class="sec-title" style="color:var(--branco)">Monitoramento para <span style="color:var(--verde-acento)">diferentes espaços</span></h2>
+  </div>
+
+  <div class="at-grid">
+    <div class="at-card fu"><div class="at-ico">🏠</div><div class="at-name">Residências</div></div>
+    <div class="at-card fu"><div class="at-ico">🏘️</div><div class="at-name">Condomínios</div></div>
+    <div class="at-card fu"><div class="at-ico">🏢</div><div class="at-name">Empresas</div></div>
+    <div class="at-card fu"><div class="at-ico">🏪</div><div class="at-name">Comércios</div></div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+  <div class="contato-inner">
+    <div class="fu">
+      <p class="sec-label" style="justify-content:center">Fale conosco</p>
+      <h2 class="sec-title">Leve o monitoramento <span class="ac">24h</span> para o seu espaço.</h2>
+      <p class="contato-desc">Quer entender como funciona e descobrir a melhor solução para sua residência, condomínio, empresa ou comércio? Fale com a Impacto Operacional.</p>
+
+      <div class="wa-cta-box">
+        <div class="c-label">Atendimento pelo WhatsApp</div>
+        <div class="c-val">(17) 99613-3331</div>
+        <a class="wa-cta-btn" href="https://wa.me/5517996133331?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20monitoramento%2024h." target="_blank" rel="noopener">
+          💬 Conversar pelo WhatsApp
+        </a>
+      </div>
+
+      <p class="contato-note">São José do Rio Preto e região</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-inner">
+    <div>
+      <div class="foot-brand">Impacto Operacional</div>
+      <div class="foot-slogan">Monitoramento 24h e soluções operacionais</div>
+    </div>
+    <div class="foot-links">
+      <a href="#experiencia">Nossa experiência</a>
+      <a href="#porque">Por que importa</a>
+      <a href="#servicos">Como funciona</a>
+      <a href="#atendemos">Atendemos</a>
+      <a href="#contato">Contato</a>
+      <a href="https://www.impactooperacional.com.br">Site principal</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobMenu = document.getElementById('mobMenu');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobMenu.classList.toggle('open');
+  });
+
+  function closeMob() {
+    hamburger.classList.remove('open');
+    mobMenu.classList.remove('open');
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('vis');
+    });
+  }, { threshold: .08 });
+
+  document.querySelectorAll('.fu').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
