@@ -4,7 +4,6 @@
 <!--
   ASSETS: coloque estes arquivos na pasta /img/ do GitHub:
   - logo-impacto.png
-  - logo-asa.png
   - central-monitoramento.png
 -->
   <!-- Google Tag Manager -->
@@ -31,7 +30,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Monitoramento 24h por Câmeras | Impacto Operacional</title>
-  <meta name="description" content="Central de monitoramento 24h por câmeras para residências, condomínios, empresas e comércios em São José do Rio Preto e região. Serviço da Impacto Operacional em parceria com a ASA." />
+  <meta name="description" content="Central de monitoramento 24h por câmeras para residências, condomínios, empresas e comércios em São José do Rio Preto e região. Serviço de monitoramento 24h da Impacto Operacional." />
   <meta name="keywords" content="monitoramento 24h, central de monitoramento, monitoramento por câmeras, monitoramento residencial, monitoramento de condomínio, monitoramento empresarial, São José do Rio Preto" />
   <meta name="author" content="Impacto Operacional" />
   <meta name="robots" content="index, follow" />
@@ -307,50 +306,23 @@
       letter-spacing: 1.5px; text-transform: uppercase; color: var(--verde-claro);
     }
 
-    /* PARCERIA */
-    #parceria { background: var(--branco); }
-    .parceria-box {
-      max-width: 1000px; margin: 0 auto;
-      display: grid; grid-template-columns: 1.2fr .8fr; gap: 40px;
-      align-items: center; background: #fff;
-      border: 1px solid var(--cinza-medio); border-left: 5px solid var(--verde-acento);
-      border-radius: 12px; padding: 42px;
-      box-shadow: 0 15px 45px rgba(10,53,33,.07);
-    }
-    .parceria-title {
-      font-family: 'Bebas Neue', sans-serif; font-size: 35px;
-      color: var(--verde-escuro); letter-spacing: 1px; margin-bottom: 13px;
-    }
-    .parceria-copy { color: #53635a; font-size: 15px; line-height: 1.75; }
-    .asa-area {
-      text-align: center; background: #f8f6ef; border-radius: 10px;
-      padding: 25px;
-    }
-    .asa-area img { max-width: 190px; max-height: 125px; width: auto; height: auto; margin: 0 auto 12px; }
-    .asa-label {
-      font-family: 'Barlow Condensed', sans-serif; font-size: 11px;
-      font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
-      color: #8a7348;
-    }
-
-
-    /* PARCERIA EM DESTAQUE */
-    #parceria {
+    /* EXPERIÊNCIA IMPACTO */
+    #experiencia {
       background: linear-gradient(135deg, #eef6ef 0%, #ffffff 55%, #edf5ef 100%);
       position: relative;
       overflow: hidden;
     }
-    #parceria::before {
+    #experiencia::before {
       content: "";
       position: absolute;
-      width: 420px;
-      height: 420px;
+      width: 440px;
+      height: 440px;
       border-radius: 50%;
       background: rgba(76,175,80,.06);
       right: -180px;
       top: -180px;
     }
-    .parceria-feature {
+    .experiencia-feature {
       max-width: 1100px;
       margin: 0 auto;
       display: grid;
@@ -360,7 +332,7 @@
       position: relative;
       z-index: 1;
     }
-    .parceria-lead {
+    .experiencia-lead {
       margin-top: 20px;
       font-size: 20px;
       line-height: 1.65;
@@ -368,27 +340,27 @@
       color: var(--verde-escuro);
       max-width: 700px;
     }
-    .parceria-copy {
+    .experiencia-copy {
       margin-top: 15px;
       font-size: 15px;
       line-height: 1.75;
       color: #53635a;
       max-width: 650px;
     }
-    .parceria-points {
+    .experiencia-points {
       margin-top: 27px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 13px 18px;
     }
-    .parceria-points div {
+    .experiencia-points div {
       display: flex;
       align-items: center;
       gap: 9px;
       color: var(--verde-escuro);
       font-size: 14px;
     }
-    .parceria-points span {
+    .experiencia-points span {
       display: inline-flex;
       width: 22px;
       height: 22px;
@@ -400,62 +372,50 @@
       font-size: 12px;
       font-weight: 700;
     }
-    .asa-highlight { position: relative; }
-    .asa-brand-box {
-      background: #0d3d1f;
+    .experiencia-card {
+      background: var(--verde-escuro);
       border-radius: 16px;
       padding: 42px 35px;
       text-align: center;
+      color: white;
       box-shadow: 0 20px 50px rgba(10,53,33,.18);
       border: 1px solid rgba(109,191,110,.35);
     }
-    .asa-small {
-      color: rgba(255,255,255,.58);
+    .experiencia-number {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 92px;
+      line-height: .8;
+      letter-spacing: 2px;
+      color: var(--verde-claro);
+    }
+    .experiencia-number span { font-size: 42px; margin-left: 3px; }
+    .experiencia-card-title {
+      margin-top: 25px;
       font-family: 'Barlow Condensed', sans-serif;
-      font-size: 11px;
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .experiencia-card p {
+      margin: 12px auto 0;
+      max-width: 290px;
+      font-size: 14px;
+      line-height: 1.65;
+      color: rgba(255,255,255,.68);
+    }
+    .experiencia-card-line {
+      width: 70px;
+      height: 3px;
+      margin: 24px auto 15px;
+      background: var(--verde-acento);
+    }
+    .experiencia-card-bottom {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 10px;
       font-weight: 700;
       letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-    }
-    .asa-brand-box img {
-      max-width: 220px;
-      max-height: 150px;
-      width: auto;
-      height: auto;
-      margin: 0 auto 22px;
-      object-fit: contain;
-    }
-    .asa-since {
-      color: var(--verde-claro);
-      font-size: 13px;
-      line-height: 1.55;
-      max-width: 240px;
-      margin: 0 auto;
-    }
-    .asa-badge {
-      position: absolute;
-      left: -28px;
-      bottom: -24px;
-      background: white;
-      color: var(--verde-escuro);
-      border-left: 4px solid var(--verde-acento);
-      border-radius: 7px;
-      padding: 14px 20px;
-      box-shadow: 0 12px 30px rgba(10,53,33,.13);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 700;
-      font-size: 18px;
-      letter-spacing: 1px;
-      line-height: 1.1;
-      text-transform: uppercase;
-    }
-    .asa-badge span {
-      display: block;
-      margin-top: 5px;
-      font-size: 10px;
-      color: #607267;
-      letter-spacing: .8px;
+      color: rgba(255,255,255,.48);
     }
 
     /* CONTATO */
@@ -504,7 +464,7 @@
       .dif-grid { grid-template-columns: repeat(2, 1fr); }
       .srv-grid { grid-template-columns: 1fr; }
       .diferencial-inner, .parceria-feature { grid-template-columns: 1fr; }
-      .asa-highlight { max-width: 500px; margin: 10px auto 0; width: 100%; }
+      .Impacto Operacional-highlight { max-width: 500px; margin: 10px auto 0; width: 100%; }
       .at-grid { grid-template-columns: repeat(2, 1fr); }
       .nav-links { display: none; }
       .hamburger { display: flex; }
@@ -519,8 +479,8 @@
       .at-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
       .parceria-feature { gap: 40px; }
       .parceria-points { grid-template-columns: 1fr; }
-      .asa-brand-box { padding: 35px 25px; }
-      .asa-badge { left: 15px; bottom: -22px; }
+      .Impacto Operacional-brand-box { padding: 35px 25px; }
+      .Impacto Operacional-badge { left: 15px; bottom: -22px; }
       .monitor-card { grid-template-columns: 1fr 1fr; }
       .foot-inner { flex-direction: column; align-items: flex-start; }
     }
@@ -537,7 +497,7 @@
     <span class="nav-logo-txt">IMPACTO<span>Operacional</span></span>
   </a>
   <ul class="nav-links">
-    <li><a href="#parceria">A parceria</a></li>
+    <li><a href="#experiencia">Nossa experiência</a></li>
     <li><a href="#porque">Por que importa</a></li>
     <li><a href="#servicos">Como funciona</a></li>
     <li><a href="#atendemos">Atendemos</a></li>
@@ -548,7 +508,7 @@
 </nav>
 
 <div class="mob-menu" id="mobMenu">
-  <a href="#parceria" onclick="closeMob()">A parceria</a>
+  <a href="#experiencia" onclick="closeMob()">Nossa experiência</a>
   <a href="#porque" onclick="closeMob()">Por que importa</a>
   <a href="#servicos" onclick="closeMob()">Como funciona</a>
   <a href="#atendemos" onclick="closeMob()">Atendemos</a>
@@ -589,30 +549,27 @@
   </div>
 </section>
 
-<!-- PARCERIA -->
-<section id="parceria">
-  <div class="parceria-feature">
-    <div class="parceria-content fu">
-      <p class="sec-label">Uma parceria que fortalece o serviço</p>
-      <h2 class="sec-title">Experiência e credibilidade <span class="ac">unidas para monitorar o que importa.</span></h2>
-      <p class="parceria-lead">A Impacto Operacional une sua experiência em gestão e operações à credibilidade técnica da ASA Monitoramento para oferecer uma solução completa de monitoramento 24 horas na região.</p>
-      <p class="parceria-copy">Mais do que instalar câmeras, nosso objetivo é entregar um serviço estruturado, com acompanhamento contínuo, tecnologia e profissionais que conhecem o setor.</p>
-
-      <div class="parceria-points">
-        <div><span>✓</span><strong>Experiência operacional</strong></div>
-        <div><span>✓</span><strong>Especialização técnica</strong></div>
-        <div><span>✓</span><strong>Monitoramento 24 horas</strong></div>
+<!-- EXPERIÊNCIA IMPACTO -->
+<section id="experiencia">
+  <div class="experiencia-feature">
+    <div class="experiencia-content fu">
+      <p class="sec-label">Experiência que faz diferença</p>
+      <h2 class="sec-title">A Impacto Operacional entende de <span class="ac">monitoramento.</span></h2>
+      <p class="experiencia-lead">Nossa experiência na área nos permite entender diferentes operações e desenvolver soluções de monitoramento 24 horas adequadas a cada necessidade.</p>
+      <p class="experiencia-copy">Mais do que disponibilizar câmeras, oferecemos acompanhamento contínuo, tecnologia e uma equipe preparada para observar o que acontece e seguir os procedimentos definidos para cada operação.</p>
+      <div class="experiencia-points">
+        <div><span>✓</span><strong>Experiência em operações</strong></div>
+        <div><span>✓</span><strong>Monitoramento contínuo</strong></div>
+        <div><span>✓</span><strong>Equipe especializada</strong></div>
         <div><span>✓</span><strong>Atendimento regional</strong></div>
       </div>
     </div>
-
-    <div class="asa-highlight fu">
-      <div class="asa-brand-box">
-        <div class="asa-small">Em parceria com</div>
-        <img src="img/logo-asa.png" alt="ASA Monitoramento" />
-        <div class="asa-since">Especialistas desde 2013 em sistemas de alarme e monitoramento</div>
-      </div>
-      <div class="asa-badge">Impacto + ASA<br><span>Unindo experiência e impulsionando resultados</span></div>
+    <div class="experiencia-card fu">
+      <div class="experiencia-number">24<span>h</span></div>
+      <div class="experiencia-card-title">Central de Monitoramento</div>
+      <p>Acompanhamento das imagens em tempo real para manter a atenção voltada ao seu patrimônio.</p>
+      <div class="experiencia-card-line"></div>
+      <div class="experiencia-card-bottom">IMPACTO OPERACIONAL</div>
     </div>
   </div>
 </section>
@@ -704,7 +661,7 @@
     <div class="fu">
       <p class="sec-label">O diferencial</p>
       <h2 class="sec-title">Ter alguém <span class="ac">monitorando</span> faz a diferença.</h2>
-      <p class="diferencial-copy">A combinação entre uma operação estruturada e uma central especializada permite oferecer acompanhamento contínuo para quem busca mais controle sobre seu patrimônio.</p>
+      <p class="diferencial-copy">A experiência da Impacto Operacional na área permite estruturar o monitoramento de acordo com as características de cada local, com acompanhamento contínuo, tecnologia e procedimentos definidos.</p>
     </div>
 
     <div class="monitor-card fu">
@@ -776,7 +733,7 @@
       <div class="foot-slogan">Monitoramento 24h e soluções operacionais</div>
     </div>
     <div class="foot-links">
-      <a href="#parceria">A parceria</a>
+      <a href="#experiencia">Nossa experiência</a>
       <a href="#porque">Por que importa</a>
       <a href="#servicos">Como funciona</a>
       <a href="#atendemos">Atendemos</a>
