@@ -27,6 +27,22 @@
     gtag('config', 'G-C03LV543FB');
   </script>
 
+  <!-- Google Ads: conversão Lead - WhatsApp - Monitoramento -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-18242343184/4yMcCPu26oodEJCi0PpD',
+          'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Monitoramento 24h por Câmeras | Impacto Operacional</title>
@@ -503,7 +519,7 @@
     <li><a href="#atendemos">Atendemos</a></li>
     <li><a href="#contato">Contato</a></li>
   </ul>
-  <a class="nav-cta" href="https://wa.me/5517996133331?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20monitoramento%2024h." target="_blank" rel="noopener">Fale conosco</a>
+  <a class="nav-cta" href="https://wa.me/5517996133331?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20monitoramento%2024h." target="_blank" rel="noopener" onclick="return gtag_report_conversion(this.href)">Fale conosco</a>
   <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 
@@ -533,7 +549,7 @@
       </div>
 
       <div class="hero-btns">
-        <a class="btn-p" href="https://wa.me/5517996133331?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20monitoramento%2024h." target="_blank" rel="noopener">Falar com a Impacto →</a>
+        <a class="btn-p" href="https://wa.me/5517996133331?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20monitoramento%2024h." target="_blank" rel="noopener" onclick="return gtag_report_conversion(this.href)">Falar com a Impacto →</a>
         <a class="btn-o" href="#porque">Entenda o serviço</a>
       </div>
     </div>
@@ -715,7 +731,7 @@
       <div class="wa-cta-box">
         <div class="c-label">Atendimento pelo WhatsApp</div>
         <div class="c-val">(17) 99613-3331</div>
-        <a class="wa-cta-btn" href="https://wa.me/5517996133331?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20monitoramento%2024h." target="_blank" rel="noopener">
+        <a class="wa-cta-btn" href="https://wa.me/5517996133331?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20monitoramento%2024h." target="_blank" rel="noopener" onclick="return gtag_report_conversion(this.href)">
           💬 Conversar pelo WhatsApp
         </a>
       </div>
